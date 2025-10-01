@@ -1,0 +1,116 @@
+<!-- This is a comment. Comments are ignored by the browser 
+but can be used to convey information. -->
+
+<!-- Identifies this as an HTML document (other types exist, such as XML). -->
+<!DOCTYPE html>
+
+<!-- Parent tag: HTML's structure is a TREE. 
+"lang" is an attribute. Attributes identify a tag, modify its behavior, 
+or provide information about it (here it specifies language). -->
+<html lang="en">
+
+<!-- The head tag contains metadata. -->
+  <head>
+    <!-- Character set used for the document -->
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rose the Cat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <!-- The body is the visible content of the document. 
+  "class" is a reusable identifier for multiple elements. 
+  "id" is a unique identifier used only once. -->
+  <body class="the_body" id="rose_body_tag">
+
+    <!-- Header: usually contains site name, menu, or logo -->
+    <header>
+      <!-- h tags are heading tags to identify sections -->
+      <h1>Rose the Cat</h1>
+    </header>
+
+    <!-- Main contains most of the page’s content -->
+    <main>
+
+      <!-- Figure is useful for diagrams, images, and charts -->
+      <figure>
+        <img src="rose.jpg" alt="Rose looking eligent in his winter bandanna" />
+        <figcaption>Rose, the Programming Consultant</figcaption>
+      </figure>
+
+      <!-- Aside is typically for side content like menus or ads -->
+      <aside>
+        <h2>Hobbies</h2>
+        <!-- Lists: ul = unordered, ol = ordered, li = list item -->
+        <ul>
+          <li>Eating Plants</li>
+          <li>Sleeping</li>
+          <li>Programming</li>
+        </ul>
+      </aside>
+
+      <!-- Section divides content into meaningful parts -->
+      <section>
+        <h2>Bio</h2>
+        <h3>Role: Programming Consultant</h3>
+        <!-- p tags are for paragraphs -->
+        <p>
+          Declawed and abandoned at Paw's for six years, I was adopted by Ix and
+          now live happily in their home although the food could be better.
+        </p>
+      </section>
+
+      <!-- Tables display well table data rows and columns -->
+      <!-- caption is the table title -->
+      <!-- thead = column headers -->
+      <!-- tr = row, th = header cell, td = data cell -->
+      <!-- tbody = main table body -->
+      <table>
+        <caption>Food Rose Will Eat</caption>
+        <thead>
+          <tr>
+            <th>Flavor</th>
+            <th>Yum or Ick</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Chicken</td><td>Yum</td></tr>
+          <tr><td>Tuna</td><td>Yum</td></tr>
+          <tr><td>Salmon</td><td>Yum</td></tr>
+          <tr><td>Beef</td><td>Ick</td></tr>
+          <tr><td>Turkey</td><td>Yum</td></tr>
+          <tr><td>Lamb</td><td>Ick</td></tr>
+          <tr><td>Duck</td><td>Yum</td></tr>
+          <tr><td>Houseplant</td><td>Yum</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Forms let users submit information -->
+      <!-- Many behaviors are handled with JavaScript -->
+      <section>
+        <h2>Contact</h2>
+        <form class="contact_form">
+          <!-- label ties text to an input (via "for") -->
+          <!-- inputs can be different types -->
+          <label for="name">Your Name:</label>
+          <input type="text" name="name"/><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email"/><br /><br />
+
+          <label for="message">Message:</label>
+          <!-- textarea is for larger text input -->
+          <textarea id="message" name="message" rows="4" cols="30"></textarea><br/>
+          
+          <input type="submit"></input>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer usually appears at the end of a page. 
+    Menus are often repeated here as secondary navigation. -->
+    <footer>
+      <p>© 2025 Rose the Cat. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
