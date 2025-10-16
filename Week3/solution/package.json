@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "solution",
+  "version": "1.0.0",
+  "description": "Write a function that takes **two parameters**:",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

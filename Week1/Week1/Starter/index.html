@@ -1,9 +1,68 @@
+<!-- this is a comment -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 class="heading">Rose The Cat</h1>
+    </header>
+    <main>
+      <figure>
+        <img src="rose.jpg" />
+        <figcaption>Rose, the Programming Consultant</figcaption>
+      </figure>
+      <section>
+        <h2 class="heading" id="bio_header">Bio</h2>
+        <h3>Role: Programming Consultant</h3>
+        <p>
+          Declawed and abandoned at Paw's for six years, I was adopted by Ix and
+          now live happily in their home although the food could be better.
+        </p>
+      </section>
+      <aside>
+        <h2>Hobbies</h2>
+        <ol>
+          <li>Eating Plants</li>
+          <li>Sleeping</li>
+          <li>Programming</li>
+        </ol>
+      </aside>
+      <table>
+        <thead>
+          <tr>
+            <th>Flavor</th>
+            <th>Yum or Ick</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Chicken</td><td>Yum</td></tr>
+          <tr><td>Tuna</td><td>Yum</td></tr>
+          <tr><td>Salmon</td><td>Yum</td></tr>
+          <tr><td>Lamb</td><td>Ick</td></tr>
+        </tbody>
+      </table>
+
+      <section>
+        <h2>Contact Form</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" name="name" />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" />
+
+          <label for="message">Message:</label>
+          <textarea name="message" rows="5" cols="20"></textarea>
+          <input type="submit"></input>
+        </form>
+      </section>
+    </main>
+     
+    <footer> <p>© 2025 Rose the Cat. All rights reserved.</p></footer>
+  </body>
 </html>

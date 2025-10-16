@@ -1,38 +1,29 @@
 body {
   background-color: purple;
-  color: white;
+}
+body {
+  background-color: blue;
+  color: whitesmoke;
 }
 img {
   max-width: 300px;
 }
-.contact_form {
-  background-color: gray;
-  max-width: 300;
-}
-/* 
-CSS Rules follow a specific order of operation:
 
-1. Order in the stylesheet:
-   - When two selectors have the same name, the one that appears later in the stylesheet will take precedence.
+.heading {
+  color: aliceblue;
+}
 
-2. Specificity:
-   - Tag selectors are the least specific.
-   - Class selectors are more specific.
-   - ID selectors are the most specific.
-*/
+#bio_header {
+  color: aqua;
+}
 
-.the_body {
-  background-color: green;
+h2 {
+  color: green;
 }
-#rose_body_tag {
-  background-color: red;
-}
-body {
-  background-color: blue;
-}
-/* Selecting multiple elements with the smae rule */
+/* Order - tag - class id */
+
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid white;
 }
