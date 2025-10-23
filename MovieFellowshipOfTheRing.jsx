@@ -1,5 +1,4 @@
 import React from 'react';
-import './MovieFellowshipOfTheRing.css';
 
 const MovieFellowshipOfTheRing = () => {
   const movieInfo = {
@@ -26,47 +25,54 @@ const MovieFellowshipOfTheRing = () => {
   ];
 
   return (
-    <div className="movie-container">
-      <header className="movie-header">
-        <h1 className="movie-title">{movieInfo.title}</h1>
-        <div className="movie-meta">
-          <span>{movieInfo.releaseYear}</span>
-          <span>•</span>
-          <span>{movieInfo.runtime}</span>
-          <span>•</span>
-          <span>{movieInfo.rating}</span>
-        </div>
-      </header>
-
-      <div className="movie-content">
-        <section className="movie-info">
-          <h2>Movie Information</h2>
-          <div className="info-grid">
-            <div className="info-item">
-              <strong>Director:</strong> {movieInfo.director}
-            </div>
-            <div className="info-item">
-              <strong>Budget:</strong> {movieInfo.budget}
-            </div>
-            <div className="info-item">
-              <strong>Box Office:</strong> {movieInfo.boxOffice}
-            </div>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-amber-900 text-white p-8">
+      <div className="max-w-6xl mx-auto">
+        <header className="text-center mb-12 pb-8 border-b-2 border-amber-600">
+          <h1 className="text-4xl md:text-5xl font-bold text-amber-400 mb-4 drop-shadow-lg">
+            {movieInfo.title}
+          </h1>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-lg text-gray-300">
+            <span>{movieInfo.releaseYear}</span>
+            <span className="hidden md:block">•</span>
+            <span>{movieInfo.runtime}</span>
+            <span className="hidden md:block">•</span>
+            <span>{movieInfo.rating}</span>
           </div>
-          <p className="movie-summary">{movieInfo.summary}</p>
-        </section>
+        </header>
 
-        <section className="fellowship-section">
-          <h2>The Fellowship</h2>
-          <div className="fellowship-grid">
-            {fellowshipMembers.map((member, index) => (
-              <div key={index} className="member-card">
-                <h3>{member.name}</h3>
-                <p><strong>Actor:</strong> {member.actor}</p>
-                <p><strong>Race:</strong> {member.race}</p>
+        <div className="space-y-12">
+          <section className="bg-white bg-opacity-10 rounded-xl p-8 border border-amber-600 backdrop-blur-sm">
+            <h2 className="text-2xl font-bold text-amber-400 mb-6">Movie Information</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+              <div>
+                <strong className="text-amber-300">Director:</strong> {movieInfo.director}
               </div>
-            ))}
-          </div>
-        </section>
+              <div>
+                <strong className="text-amber-300">Budget:</strong> {movieInfo.budget}
+              </div>
+              <div>
+                <strong className="text-amber-300">Box Office:</strong> {movieInfo.boxOffice}
+              </div>
+            </div>
+            <p className="text-lg leading-relaxed text-gray-200">{movieInfo.summary}</p>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-amber-400 text-center mb-8">The Fellowship</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {fellowshipMembers.map((member, index) => (
+                <div 
+                  key={index}
+                  className="bg-white bg-opacity-5 rounded-lg p-6 border border-gray-600 hover:border-amber-500 hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/20"
+                >
+                  <h3 className="text-xl font-bold text-amber-400 mb-3">{member.name}</h3>
+                  <p className="mb-2"><strong className="text-amber-300">Actor:</strong> {member.actor}</p>
+                  <p><strong className="text-amber-300">Race:</strong> {member.race}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );
